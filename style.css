@@ -1,0 +1,34 @@
+html,
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium';
+    background-color: antiquewhite;
+}
+#todo h2{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    color:aliceblue;
+    letter-spacing: 1px;
+
+}
+input{
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-top: 30px;
+    height: 2em;
+    width:250px;
+    padding-left: 10px;
+}
+input:active{
+    border: none;
+}
+#todo{
+    height:500px;
+    width:400px;
+    margin: 200px auto;
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 30px;
+}
