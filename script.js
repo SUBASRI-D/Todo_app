@@ -1,17 +1,16 @@
-let button=document.getElementById('Add');
-let todolist=document.getElementById('todolist');
-let input=document.getElementById('input');
-let todos=[];
+let inputField= document.getElementById("input");
+let button = document.getElementById("add");
+let notesList=document.getElementById("notesList");
+function addTodo()
+{
+    let inputValue=inputField.value.trim();
 
-button.addEventListener('click',()=>{
-    todos.push(input.value)
-    addtodo(input.value)
-    input.value=''
-})
-function addtodo(todo){
-    let para = document.createElement('p');
-        para.innerText=todo;
-        todolist.appendChild(para);
-
+    if(inputValue!==""){
+        let list = document.createElement('li');
     
+        list.textContent=inputField.value.trim();
+        notesList.appendChild(list);
+        console.log(inputField.value);
+
+    }
 }
